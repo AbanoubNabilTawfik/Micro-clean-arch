@@ -1,0 +1,15 @@
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\bin\Debug\net9.0\Discount.Application.deps.json
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\bin\Debug\net9.0\Discount.Application.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\bin\Debug\net9.0\Discount.Application.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\obj\Debug\net9.0\Discount.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\obj\Debug\net9.0\Discount.Application.AssemblyInfoInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\obj\Debug\net9.0\Discount.Application.AssemblyInfo.cs
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\obj\Debug\net9.0\Discount.Application.csproj.CoreCompileInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\obj\Debug\net9.0\Discount.Application.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\obj\Debug\net9.0\refint\Discount.Application.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\obj\Debug\net9.0\Discount.Application.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\obj\Debug\net9.0\ref\Discount.Application.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\bin\Debug\net9.0\Discount.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\bin\Debug\net9.0\Discount.Core.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\obj\Debug\net9.0\Discount.Application.csproj.AssemblyReference.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\obj\Debug\net9.0\Discount.FBECC352.Up2Date

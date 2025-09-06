@@ -1,0 +1,12 @@
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\bin\Debug\net9.0\Catalog.Core.deps.json
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\bin\Debug\net9.0\Catalog.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\bin\Debug\net9.0\Catalog.Core.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\obj\Debug\net9.0\Catalog.Core.csproj.AssemblyReference.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\obj\Debug\net9.0\Catalog.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\obj\Debug\net9.0\Catalog.Core.AssemblyInfoInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\obj\Debug\net9.0\Catalog.Core.AssemblyInfo.cs
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\obj\Debug\net9.0\Catalog.Core.csproj.CoreCompileInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\obj\Debug\net9.0\Catalog.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\obj\Debug\net9.0\refint\Catalog.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\obj\Debug\net9.0\Catalog.Core.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\obj\Debug\net9.0\ref\Catalog.Core.dll

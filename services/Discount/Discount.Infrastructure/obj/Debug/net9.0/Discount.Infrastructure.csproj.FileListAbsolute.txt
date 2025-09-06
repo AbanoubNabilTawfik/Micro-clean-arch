@@ -1,0 +1,17 @@
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\bin\Debug\net9.0\Discount.Infrastructure.deps.json
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\bin\Debug\net9.0\Discount.Infrastructure.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\bin\Debug\net9.0\Discount.Infrastructure.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\obj\Debug\net9.0\Discount.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\obj\Debug\net9.0\Discount.Infrastructure.AssemblyInfoInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\obj\Debug\net9.0\Discount.Infrastructure.AssemblyInfo.cs
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\obj\Debug\net9.0\Discount.Infrastructure.csproj.CoreCompileInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\obj\Debug\net9.0\Discount.Infrastructure.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\obj\Debug\net9.0\refint\Discount.Infrastructure.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\obj\Debug\net9.0\Discount.Infrastructure.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\obj\Debug\net9.0\ref\Discount.Infrastructure.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\bin\Debug\net9.0\Discount.Application.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\bin\Debug\net9.0\Discount.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\bin\Debug\net9.0\Discount.Application.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\bin\Debug\net9.0\Discount.Core.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\obj\Debug\net9.0\Discount.Infrastructure.csproj.AssemblyReference.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Infrastructure\obj\Debug\net9.0\Discount.DF031D83.Up2Date

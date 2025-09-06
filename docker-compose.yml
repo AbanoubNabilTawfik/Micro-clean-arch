@@ -1,0 +1,158 @@
+services:
+  catalog.api:
+    image: ${DOCKER_REGISTRY-}catalogapi
+    build:
+      context: .
+      dockerfile: services/catalog/Catalog.API/Dockerfile
+    ports:
+      - "8000:8000" # ربط البورت من الجهاز للمشروع
+    depends_on:
+      - catalogdb
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8000
+      - DatabaseSettings__ConnectionString=mongodb://catalogdb:27017
+      - DatabaseSettings__DatabaseName=CatalogDb
+      - DatabaseSettings__CollectionName=Products
+      - DatabaseSettings__BrandsCollection=ProductBrands
+      - DatabaseSettings__TypesCollection=ProductTypes
+
+  catalogdb:
+    image: mongo
+    container_name: catalogdb
+    ports:
+      - "27017:27017"
+    volumes:
+      - catalogdata:/data/db
+  basketdb:
+    image: redis:alpine
+    container_name: basketdb
+    restart: always
+    ports:
+      - "6379:6379"
+  discountdb:
+     image: postgres
+     container_name: discountdb
+     environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=Password@1
+      - POSTGRES_DB=DiscountDb
+     restart: always
+     ports:
+      - "5432:5432"
+     volumes: 
+      - postgres_data:/var/lib/postgresql/data/
+     healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d DiscountDb"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  orderdb:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: orderdb
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "P@ssw0rd123"
+
+    restart: always
+    ports:
+      - "1433:1433"
+    volumes:
+      - orderdb-data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P 'P@ssw0rd123' -Q 'select 1'"]
+      interval: 10s
+      timeout: 10s
+      retries: 3
+
+  rabbitmq:
+     image: rabbitmq:3-management-alpine
+     container_name: rabbitmq
+     restart: always
+     ports:
+       - "5672:5672"
+       - "15672:15672"
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@eCommerce.net
+      - PGADMIN_DEFAULT_PASSWORD=Password@1
+    restart: always
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/root/.pgadmin
+
+
+
+  basket.api:
+    image: ${DOCKER_REGISTRY-}basketapi
+    build:
+      context: .
+      dockerfile: services/Basket/Basket.API/Dockerfile
+    ports:
+      - "8001:8000" # ربط البورت من الجهاز للمشروع
+    depends_on:
+      - basketdb
+      - rabbitmq
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8000
+      - CacheSettings__ConnectionString=basketdb:6379
+      - "GrpcSettings__DiscountUrl=http://discount.api:8080"
+      - "EventBusSettings__HostAddress=amqp://guest:guest@rabbitmq:5672"
+
+     
+ 
+  portainer:
+     image: portainer/portainer-ce
+     container_name: portainer
+     restart: always
+     ports:
+       - 8080:8000
+       - 9090:9000
+     volumes:
+       - portainer_data:/data
+         
+
+  discount.api:
+    image: ${DOCKER_REGISTRY-}discountapi
+    build:
+      context: .
+      dockerfile: services/Discount/Discount.API/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "DatabaseSettings__ConnectionString=Server=discountdb;Port=5432;Database=DiscountDb;User Id=admin;Password=Password@1;"
+    depends_on:
+       discountdb:
+         condition: service_healthy
+    ports:
+      - "8002:8080"
+
+  ordering.api:
+    image: ${DOCKER_REGISTRY-}orderingapi
+    build:
+      context: .
+      dockerfile: services/Ordering/Ordering.API/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
+      - "ConnectionStrings__OrderingConnectionString=Server=orderdb;Database=OrderDb2;User Id=sa;Password=P@ssw0rd123;TrustServerCertificate=True;"
+      - "EventBusSettings__HostAddress=amqp://guest:guest@rabbitmq:5672"
+    depends_on:
+      - orderdb
+      - rabbitmq
+    ports:
+     - "8003:8080"
+
+volumes:
+  catalogdata:
+  portainer_data:
+  postgres_data:
+  pgadmin_data:
+  orderdb-data:
+
+
+

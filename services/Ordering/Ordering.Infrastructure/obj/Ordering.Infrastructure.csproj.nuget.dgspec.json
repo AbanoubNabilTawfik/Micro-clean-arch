@@ -1,0 +1,319 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\Infrastructure\\EventBus.Messages\\EventBus.Messages.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\Infrastructure\\EventBus.Messages\\EventBus.Messages.csproj",
+        "projectName": "EventBus.Messages",
+        "projectPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\Infrastructure\\EventBus.Messages\\EventBus.Messages.csproj",
+        "packagesPath": "C:\\Users\\Access\\.nuget\\packages\\",
+        "outputPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\Infrastructure\\EventBus.Messages\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Access\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/JRvc8YGkfiXesmQVC1qWok4exyWdAlmREUPzb2yP1ZSbZuqDiN/api": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Application\\Ordering.Application.csproj",
+        "projectName": "Ordering.Application",
+        "projectPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Application\\Ordering.Application.csproj",
+        "packagesPath": "C:\\Users\\Access\\.nuget\\packages\\",
+        "outputPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Access\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/JRvc8YGkfiXesmQVC1qWok4exyWdAlmREUPzb2yP1ZSbZuqDiN/api": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\Infrastructure\\EventBus.Messages\\EventBus.Messages.csproj": {
+                "projectPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\Infrastructure\\EventBus.Messages\\EventBus.Messages.csproj"
+              },
+              "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Core\\Ordering.Core.csproj": {
+                "projectPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Core\\Ordering.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Core\\Ordering.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Core\\Ordering.Core.csproj",
+        "projectName": "Ordering.Core",
+        "projectPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Core\\Ordering.Core.csproj",
+        "packagesPath": "C:\\Users\\Access\\.nuget\\packages\\",
+        "outputPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Access\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/JRvc8YGkfiXesmQVC1qWok4exyWdAlmREUPzb2yP1ZSbZuqDiN/api": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+        "projectName": "Ordering.Infrastructure",
+        "projectPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Access\\.nuget\\packages\\",
+        "outputPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Access\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/JRvc8YGkfiXesmQVC1qWok4exyWdAlmREUPzb2yP1ZSbZuqDiN/api": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {
+                "projectPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Application\\Ordering.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

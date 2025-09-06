@@ -1,0 +1,11 @@
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\bin\Debug\net9.0\EventBus.Messages.deps.json
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\bin\Debug\net9.0\EventBus.Messages.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\bin\Debug\net9.0\EventBus.Messages.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\obj\Debug\net9.0\EventBus.Messages.GeneratedMSBuildEditorConfig.editorconfig
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\obj\Debug\net9.0\EventBus.Messages.AssemblyInfoInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\obj\Debug\net9.0\EventBus.Messages.AssemblyInfo.cs
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\obj\Debug\net9.0\EventBus.Messages.csproj.CoreCompileInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\obj\Debug\net9.0\EventBus.Messages.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\obj\Debug\net9.0\refint\EventBus.Messages.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\obj\Debug\net9.0\EventBus.Messages.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\obj\Debug\net9.0\ref\EventBus.Messages.dll

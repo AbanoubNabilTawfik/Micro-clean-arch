@@ -1,0 +1,17 @@
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\bin\Debug\net9.0\Ordering.Application.deps.json
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\bin\Debug\net9.0\Ordering.Application.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\bin\Debug\net9.0\Ordering.Application.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\bin\Debug\net9.0\Ordering.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\bin\Debug\net9.0\Ordering.Core.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\obj\Debug\net9.0\Ordering.Application.csproj.AssemblyReference.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\obj\Debug\net9.0\Ordering.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\obj\Debug\net9.0\Ordering.Application.AssemblyInfoInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\obj\Debug\net9.0\Ordering.Application.AssemblyInfo.cs
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\obj\Debug\net9.0\Ordering.Application.csproj.CoreCompileInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\obj\Debug\net9.0\Ordering.50CBBEA9.Up2Date
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\obj\Debug\net9.0\Ordering.Application.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\obj\Debug\net9.0\refint\Ordering.Application.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\obj\Debug\net9.0\Ordering.Application.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\obj\Debug\net9.0\ref\Ordering.Application.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\bin\Debug\net9.0\EventBus.Messages.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\bin\Debug\net9.0\EventBus.Messages.pdb

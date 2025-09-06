@@ -1,0 +1,11 @@
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\bin\Debug\net9.0\Ordering.Core.deps.json
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\bin\Debug\net9.0\Ordering.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\bin\Debug\net9.0\Ordering.Core.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\obj\Debug\net9.0\Ordering.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\obj\Debug\net9.0\Ordering.Core.AssemblyInfoInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\obj\Debug\net9.0\Ordering.Core.AssemblyInfo.cs
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\obj\Debug\net9.0\Ordering.Core.csproj.CoreCompileInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\obj\Debug\net9.0\Ordering.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\obj\Debug\net9.0\refint\Ordering.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\obj\Debug\net9.0\Ordering.Core.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\obj\Debug\net9.0\ref\Ordering.Core.dll

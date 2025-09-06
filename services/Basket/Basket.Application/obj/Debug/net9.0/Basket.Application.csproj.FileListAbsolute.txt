@@ -1,0 +1,17 @@
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\bin\Debug\net9.0\Basket.Application.deps.json
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\bin\Debug\net9.0\Basket.Application.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\bin\Debug\net9.0\Basket.Application.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\bin\Debug\net9.0\Basket.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\bin\Debug\net9.0\Basket.Core.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\obj\Debug\net9.0\Basket.Application.csproj.AssemblyReference.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\obj\Debug\net9.0\Basket.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\obj\Debug\net9.0\Basket.Application.AssemblyInfoInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\obj\Debug\net9.0\Basket.Application.AssemblyInfo.cs
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\obj\Debug\net9.0\Basket.Application.csproj.CoreCompileInputs.cache
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\obj\Debug\net9.0\Basket.A.E41EB0DD.Up2Date
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\obj\Debug\net9.0\Basket.Application.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\obj\Debug\net9.0\refint\Basket.Application.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\obj\Debug\net9.0\Basket.Application.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\obj\Debug\net9.0\ref\Basket.Application.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\bin\Debug\net9.0\EventBus.Messages.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\bin\Debug\net9.0\EventBus.Messages.pdb
