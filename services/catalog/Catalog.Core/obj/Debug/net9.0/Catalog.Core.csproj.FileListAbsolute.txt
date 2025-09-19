@@ -10,3 +10,4 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\o
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\obj\Debug\net9.0\refint\Catalog.Core.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\obj\Debug\net9.0\Catalog.Core.pdb
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\obj\Debug\net9.0\ref\Catalog.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Core\obj\Debug\net9.0\Catalog.Core.sourcelink.json

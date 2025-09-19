@@ -195,3 +195,6 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.API\
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.API\bin\Debug\net9.0\RabbitMQ.Client.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.API\bin\Debug\net9.0\EventBus.Messages.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.API\bin\Debug\net9.0\EventBus.Messages.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.API\bin\Debug\net9.0\Common.Logging.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.API\bin\Debug\net9.0\Common.Logging.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.API\obj\Debug\net9.0\Ordering.API.sourcelink.json

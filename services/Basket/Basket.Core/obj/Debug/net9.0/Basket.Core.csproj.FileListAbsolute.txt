@@ -9,3 +9,4 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Core\obj
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Core\obj\Debug\net9.0\refint\Basket.Core.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Core\obj\Debug\net9.0\Basket.Core.pdb
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Core\obj\Debug\net9.0\ref\Basket.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Core\obj\Debug\net9.0\Basket.Core.sourcelink.json

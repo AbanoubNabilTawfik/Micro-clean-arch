@@ -54,3 +54,6 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.API\
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.API\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.API\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.API\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.API\bin\Debug\net9.0\Common.Logging.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.API\bin\Debug\net9.0\Common.Logging.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.API\obj\Debug\net9.0\Discount.API.sourcelink.json

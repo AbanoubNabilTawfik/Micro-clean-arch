@@ -61,3 +61,6 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.API\ob
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.API\obj\Debug\net9.0\Catalog.API.pdb
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.API\obj\Debug\net9.0\Catalog.API.genruntimeconfig.cache
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.API\obj\Debug\net9.0\ref\Catalog.API.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.API\bin\Debug\net9.0\Common.Logging.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.API\bin\Debug\net9.0\Common.Logging.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.API\obj\Debug\net9.0\Catalog.API.sourcelink.json

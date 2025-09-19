@@ -15,3 +15,4 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Appl
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\obj\Debug\net9.0\ref\Ordering.Application.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\bin\Debug\net9.0\EventBus.Messages.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\bin\Debug\net9.0\EventBus.Messages.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Application\obj\Debug\net9.0\Ordering.Application.sourcelink.json

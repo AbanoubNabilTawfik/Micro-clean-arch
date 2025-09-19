@@ -11,6 +11,7 @@
           "Asp.Versioning.Mvc": "8.1.0",
           "Catalog.Application": "1.0.0",
           "Catalog.Infrastructure": "1.0.0",
+          "Common.Logging": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.1",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.21.0",
           "Swashbuckle.AspNetCore": "9.0.3",
@@ -374,6 +375,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "Common.Logging/1.0.0": {
+        "runtime": {
+          "Common.Logging.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -702,6 +711,11 @@
       "sha512": ""
     },
     "Catalog.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Common.Logging/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -2081,6 +2081,16 @@
           }
         }
       },
+      "Common.Logging/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Common.Logging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Logging.dll": {}
+        }
+      },
       "EventBus.Messages/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -5996,6 +6006,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Common.Logging/1.0.0": {
+      "type": "project",
+      "path": "../../../Infrastructure/Common.Logging/Common.Logging.csproj",
+      "msbuildProject": "../../../Infrastructure/Common.Logging/Common.Logging.csproj"
+    },
     "EventBus.Messages/1.0.0": {
       "type": "project",
       "path": "../../../Infrastructure/EventBus.Messages/EventBus.Messages.csproj",
@@ -6020,6 +6035,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "Asp.Versioning.Mvc >= 8.1.0",
+      "Common.Logging >= 1.0.0",
       "MassTransit >= 7.3.1",
       "MassTransit.AspNetCore >= 7.3.1",
       "MassTransit.RabbitMQ >= 7.3.1",
@@ -6066,6 +6082,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\Infrastructure\\Common.Logging\\Common.Logging.csproj": {
+              "projectPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\Infrastructure\\Common.Logging\\Common.Logging.csproj"
+            },
             "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {
               "projectPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Ordering\\Ordering.Application\\Ordering.Application.csproj"
             },

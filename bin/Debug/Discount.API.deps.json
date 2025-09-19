@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "Discount.API/1.0.0": {
         "dependencies": {
+          "Common.Logging": "1.0.0",
           "Discount.Application": "1.0.0",
           "Discount.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.1",
@@ -242,6 +243,14 @@
           "lib/net8.0/Npgsql.dll": {
             "assemblyVersion": "9.0.3.0",
             "fileVersion": "9.0.3.0"
+          }
+        }
+      },
+      "Common.Logging/1.0.0": {
+        "runtime": {
+          "Common.Logging.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -484,6 +493,11 @@
       "sha512": "sha512-tPvY61CxOAWxNsKLEBg+oR646X4Bc8UmyQ/tJszL/7mEmIXQnnBhVJZrZEEUv0Bstu0mEsHZD5At3EO8zQRAYw==",
       "path": "npgsql/9.0.3",
       "hashPath": "npgsql.9.0.3.nupkg.sha512"
+    },
+    "Common.Logging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Discount.Application/1.0.0": {
       "type": "project",

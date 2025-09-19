@@ -18,3 +18,4 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Infras
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Infrastructure\obj\Debug\net9.0\refint\Catalog.Infrastructure.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Infrastructure\obj\Debug\net9.0\Catalog.Infrastructure.pdb
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Infrastructure\obj\Debug\net9.0\ref\Catalog.Infrastructure.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\catalog\Catalog.Infrastructure\obj\Debug\net9.0\Catalog.Infrastructure.sourcelink.json

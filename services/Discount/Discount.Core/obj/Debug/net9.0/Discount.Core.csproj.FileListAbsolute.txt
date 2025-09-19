@@ -9,3 +9,4 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Core
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Core\obj\Debug\net9.0\refint\Discount.Core.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Core\obj\Debug\net9.0\Discount.Core.pdb
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Core\obj\Debug\net9.0\ref\Discount.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Core\obj\Debug\net9.0\Discount.Core.sourcelink.json

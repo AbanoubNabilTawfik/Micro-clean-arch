@@ -9,3 +9,4 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\obj\Debug\net9.0\refint\Ordering.Core.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\obj\Debug\net9.0\Ordering.Core.pdb
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\obj\Debug\net9.0\ref\Ordering.Core.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Core\obj\Debug\net9.0\Ordering.Core.sourcelink.json

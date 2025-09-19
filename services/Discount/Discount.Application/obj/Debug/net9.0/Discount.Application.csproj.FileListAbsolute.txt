@@ -13,3 +13,4 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Appl
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\bin\Debug\net9.0\Discount.Core.pdb
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\obj\Debug\net9.0\Discount.Application.csproj.AssemblyReference.cache
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\obj\Debug\net9.0\Discount.FBECC352.Up2Date
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Discount\Discount.Application\obj\Debug\net9.0\Discount.Application.sourcelink.json

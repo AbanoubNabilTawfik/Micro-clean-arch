@@ -9,6 +9,7 @@
       "Ordering.API/1.0.0": {
         "dependencies": {
           "Asp.Versioning.Mvc": "8.1.0",
+          "Common.Logging": "1.0.0",
           "MassTransit": "7.3.1",
           "MassTransit.AspNetCore": "7.3.1",
           "MassTransit.RabbitMQ": "7.3.1",
@@ -1306,6 +1307,14 @@
           }
         }
       },
+      "Common.Logging/1.0.0": {
+        "runtime": {
+          "Common.Logging.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "EventBus.Messages/1.0.0": {
         "runtime": {
           "EventBus.Messages.dll": {
@@ -2120,6 +2129,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Common.Logging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "EventBus.Messages/1.0.0": {
       "type": "project",

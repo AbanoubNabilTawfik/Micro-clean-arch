@@ -755,6 +755,16 @@
         "runtime": {
           "bin/placeholder/Catalog.Infrastructure.dll": {}
         }
+      },
+      "Common.Logging/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Common.Logging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Logging.dll": {}
+        }
       }
     }
   },
@@ -2190,6 +2200,11 @@
       "type": "project",
       "path": "../Catalog.Infrastructure/Catalog.Infrastructure.csproj",
       "msbuildProject": "../Catalog.Infrastructure/Catalog.Infrastructure.csproj"
+    },
+    "Common.Logging/1.0.0": {
+      "type": "project",
+      "path": "../../../Infrastructure/Common.Logging/Common.Logging.csproj",
+      "msbuildProject": "../../../Infrastructure/Common.Logging/Common.Logging.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2197,6 +2212,7 @@
       "Asp.Versioning.Mvc >= 8.1.0",
       "Catalog.Application >= 1.0.0",
       "Catalog.Infrastructure >= 1.0.0",
+      "Common.Logging >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.1",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.21.0",
       "Swashbuckle.AspNetCore >= 9.0.3",
@@ -2237,6 +2253,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\Infrastructure\\Common.Logging\\Common.Logging.csproj": {
+              "projectPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\Infrastructure\\Common.Logging\\Common.Logging.csproj"
+            },
             "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\catalog\\Catalog.Application\\Catalog.Application.csproj": {
               "projectPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\catalog\\Catalog.Application\\Catalog.Application.csproj"
             },

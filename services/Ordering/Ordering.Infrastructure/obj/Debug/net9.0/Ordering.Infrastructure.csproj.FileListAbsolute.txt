@@ -19,3 +19,4 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Infr
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Infrastructure\obj\Debug\net9.0\Ordering.Infrastructure.genruntimeconfig.cache
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Infrastructure\bin\Debug\net9.0\EventBus.Messages.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Infrastructure\bin\Debug\net9.0\EventBus.Messages.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Ordering\Ordering.Infrastructure\obj\Debug\net9.0\Ordering.Infrastructure.sourcelink.json

@@ -15,3 +15,4 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Applicat
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\obj\Debug\net9.0\ref\Basket.Application.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\bin\Debug\net9.0\EventBus.Messages.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\bin\Debug\net9.0\EventBus.Messages.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Application\obj\Debug\net9.0\Basket.Application.sourcelink.json

@@ -9,3 +9,4 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Message
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\obj\Debug\net9.0\refint\EventBus.Messages.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\obj\Debug\net9.0\EventBus.Messages.pdb
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\obj\Debug\net9.0\ref\EventBus.Messages.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\Infrastructure\EventBus.Messages\obj\Debug\net9.0\EventBus.Messages.sourcelink.json

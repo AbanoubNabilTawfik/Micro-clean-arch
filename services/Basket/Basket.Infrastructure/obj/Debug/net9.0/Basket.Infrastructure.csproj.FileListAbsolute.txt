@@ -17,3 +17,4 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Infrastr
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Infrastructure\obj\Debug\net9.0\ref\Basket.Infrastructure.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Infrastructure\bin\Debug\net9.0\EventBus.Messages.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Infrastructure\bin\Debug\net9.0\EventBus.Messages.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.Infrastructure\obj\Debug\net9.0\Basket.Infrastructure.sourcelink.json

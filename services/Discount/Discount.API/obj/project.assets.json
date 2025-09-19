@@ -444,6 +444,16 @@
           }
         }
       },
+      "Common.Logging/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Common.Logging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Logging.dll": {}
+        }
+      },
       "Discount.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1288,6 +1298,11 @@
         "postgresql.png"
       ]
     },
+    "Common.Logging/1.0.0": {
+      "type": "project",
+      "path": "../../../Infrastructure/Common.Logging/Common.Logging.csproj",
+      "msbuildProject": "../../../Infrastructure/Common.Logging/Common.Logging.csproj"
+    },
     "Discount.Application/1.0.0": {
       "type": "project",
       "path": "../Discount.Application/Discount.Application.csproj",
@@ -1306,6 +1321,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Common.Logging >= 1.0.0",
       "Discount.Application >= 1.0.0",
       "Discount.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.1",
@@ -1345,6 +1361,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\Infrastructure\\Common.Logging\\Common.Logging.csproj": {
+              "projectPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\Infrastructure\\Common.Logging\\Common.Logging.csproj"
+            },
             "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Discount\\Discount.Application\\Discount.Application.csproj": {
               "projectPath": "D:\\MY Data\\ASP.NET  and Angular Course\\Ecommerce\\services\\Discount\\Discount.Application\\Discount.Application.csproj"
             },
