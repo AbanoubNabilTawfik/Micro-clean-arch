@@ -18,6 +18,7 @@ COPY ["services/Basket/Basket.Application/Basket.Application.csproj", "services/
 COPY ["services/Basket/Basket.Core/Basket.Core.csproj", "services/Basket/Basket.Core/"]
 COPY ["services/Basket/Basket.Infrastructure/Basket.Infrastructure.csproj", "services/Basket/Basket.Infrastructure/"]
 COPY ["Infrastructure/EventBus.Messages/EventBus.Messages.csproj","Infrastructure/EventBus.Messages/"]
+COPY ["Infrastructure/Common.Logging/Common.Logging.csproj","Infrastructure/Common.Logging/"]
 RUN dotnet restore "./services/Basket/Basket.API/Basket.API.csproj"
 COPY . .
 WORKDIR "/src/services/Basket/Basket.API"

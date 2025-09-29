@@ -19,16 +19,21 @@ namespace Basket.API.Controllers
         private readonly IMediator _mediator;
         private readonly IPublishEndpoint _publishEndpoint;
         private readonly IMapper _mapper;
+        private readonly ILogger<BasketController> _logger;
         
 
         public BasketController(
             IMediator mediator, 
             IPublishEndpoint publishEndpoint, 
-            IMapper mapper)
+            IMapper mapper,
+            ILogger<BasketController> logger
+
+            )
         {
             _mediator = mediator;
             _publishEndpoint = publishEndpoint;
             _mapper = mapper;
+            _logger = logger;
            
         }
 
@@ -82,6 +87,7 @@ namespace Basket.API.Controllers
             eventMsg.TotalPrice= basket.TotalPrice;
             await _publishEndpoint.Publish(eventMsg);
 
+            _logger.LogInformation($"Basket Published for {basket.UserName}");
             //remove from basket
             var deletedcmd = new DeleteBasketByUserNameCommand(basketCheckout.UserName);
             await _mediator.Send(deletedcmd);

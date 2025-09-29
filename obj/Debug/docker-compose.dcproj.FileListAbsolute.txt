@@ -118,3 +118,14 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\NewId.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\Newtonsoft.Json.Bson.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\RabbitMQ.Client.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\EventBus.Messages.pdb
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\Common.Logging.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\Serilog.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\Serilog.Extensions.Hosting.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\Serilog.Exceptions.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\Serilog.Sinks.Console.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\Serilog.Sinks.Elasticsearch.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\Serilog.Extensions.Logging.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\Elasticsearch.Net.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\Serilog.Sinks.PeriodicBatching.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\Serilog.Formatting.Elasticsearch.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\bin\Debug\Common.Logging.pdb
