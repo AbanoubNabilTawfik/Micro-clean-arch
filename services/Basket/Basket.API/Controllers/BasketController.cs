@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using Asp.Versioning;
+using AutoMapper;
 using Basket.Application.Commands;
 using Basket.Application.GrpcServices;
 using Basket.Application.Queries;
@@ -13,7 +14,7 @@ using System.Net;
 
 namespace Basket.API.Controllers
 {
-
+    [ApiVersion("1")]
     public class BasketController : BaseApiController
     {
         private readonly IMediator _mediator;

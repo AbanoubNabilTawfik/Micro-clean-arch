@@ -219,6 +219,10 @@
               "target": "Package",
               "version": "[8.1.0, )"
             },
+            "Asp.Versioning.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "MassTransit": {
               "target": "Package",
               "version": "[7.3.1, )"
@@ -230,6 +234,10 @@
             "MassTransit.RabbitMQ": {
               "target": "Package",
               "version": "[7.3.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.9, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",

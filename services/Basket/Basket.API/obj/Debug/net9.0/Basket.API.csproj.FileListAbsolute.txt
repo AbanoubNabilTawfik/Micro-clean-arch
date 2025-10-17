@@ -98,3 +98,4 @@ D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.API\bin\
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.API\bin\Debug\net9.0\Serilog.Sinks.Elasticsearch.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.API\bin\Debug\net9.0\Serilog.Sinks.File.dll
 D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.API\bin\Debug\net9.0\Serilog.Sinks.PeriodicBatching.dll
+D:\MY Data\ASP.NET  and Angular Course\Ecommerce\services\Basket\Basket.API\bin\Debug\net9.0\Asp.Versioning.Mvc.ApiExplorer.dll

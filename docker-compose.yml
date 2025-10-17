@@ -8,6 +8,8 @@ services:
       - "8000:8000" # ربط البورت من الجهاز للمشروع
     depends_on:
       - catalogdb
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:8000
@@ -17,6 +19,9 @@ services:
       - DatabaseSettings__BrandsCollection=ProductBrands
       - DatabaseSettings__TypesCollection=ProductTypes
       - "ElasticConfiguration__Uri=http://elasticsearch:9200"
+      - Auth__Authority="https://host.docker.internal:9009"
+      - Auth__RequireHttpsMetadata=false
+      - Auth__Audience=Catalog
 
   catalogdb:
     image: mongo
@@ -171,6 +176,23 @@ services:
     ports:
       - "5601:5601"  
 
+  ocelot.apigateway:
+    image: ${DOCKER_REGISTRY-}ocelotapigateway
+    build:
+      context: .
+      dockerfile: APIGateway/Ocelot.APIGateway/Dockerfile
+    environment:
+        - ASPNETCORE_ENVIRONMENT=Development
+        - ASPNETCORE_URLS=http://+:8080
+    depends_on:
+        - catalog.api
+        - basket.api
+        - discount.api 
+        - ordering.api
+    ports:
+        - "8010:8080"
+
+
 volumes:
   catalogdata:
   portainer_data:
@@ -178,6 +200,7 @@ volumes:
   pgadmin_data:
   orderdb-data:
   elasticsearch-data:
+
 
 
 
