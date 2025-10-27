@@ -59,6 +59,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocelot.APIGateway", "APIGat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.Identity", "Infrastructure\eShop.Identity\eShop.Identity.csproj", "{33A576CC-BC87-4314-952D-E39298C03301}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{052B049E-218D-4EA9-A23B-BD6F3E923969}"
+	ProjectSection(SolutionItems) = preProject
+		APIGateway\nginx\nginx.Dockerfile = APIGateway\nginx\nginx.Dockerfile
+		APIGateway\nginx\nginx.local.conf = APIGateway\nginx\nginx.local.conf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -178,5 +184,6 @@ Global
 		{94BBA59F-31E9-413E-A066-9A4A150F2B17} = {0CDA9ECA-5570-4A0C-873C-7B283C9C6627}
 		{9B05500E-A180-4E12-94B8-DB6EB59DE38E} = {7D5860C8-8FE4-4BD3-9A8D-76F9A1BCB935}
 		{33A576CC-BC87-4314-952D-E39298C03301} = {0CDA9ECA-5570-4A0C-873C-7B283C9C6627}
+		{052B049E-218D-4EA9-A23B-BD6F3E923969} = {7D5860C8-8FE4-4BD3-9A8D-76F9A1BCB935}
 	EndGlobalSection
 EndGlobal
