@@ -10,6 +10,7 @@ using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -26,13 +27,13 @@ builder.Services.AddControllers();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
-        options.Authority = "https://host.docker.internal:9009";
-        options.RequireHttpsMetadata = true;
+        options.Authority = "http://identityserver:9011";
+        options.RequireHttpsMetadata = false;
 
         options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
         {
             ValidateIssuer = true,
-            ValidIssuer = "https://localhost:9009",
+            ValidIssuer = "http://identityserver:9011",
             ValidateAudience = true,
             ValidAudience = "Basket",
             ValidateLifetime = true,
@@ -180,17 +181,33 @@ builder.Services.AddStackExchangeRedisCache(options =>
 
 
 var app = builder.Build();
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+});
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
     app.UseDeveloperExceptionPage();
+    app.MapOpenApi();
+    app.Use((ctx, next) =>
+    {
+        if (ctx.Request.Headers.TryGetValue("X-Forwarded-Prefix", out var prefix) &&
+            !string.IsNullOrEmpty(prefix))
+        {
+            ctx.Request.PathBase = prefix.ToString(); // e.g., "/basket"
+        }
+        return next();
+    });
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Basket.API v1");
-        c.SwaggerEndpoint("/swagger/v2/swagger.json", "Basket.API v2");
+        // Use *relative* URLs so the /basket prefix is preserved by the browser
+        c.SwaggerEndpoint("v1/swagger.json", "Basket.API v1");   // no leading '/'
+        c.SwaggerEndpoint("v2/swagger.json", "Basket.API v2");   // no leading '/'
+        c.RoutePrefix = "swagger";
 
     });
 }

@@ -61,6 +61,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.Identity", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{052B049E-218D-4EA9-A23B-BD6F3E923969}"
 	ProjectSection(SolutionItems) = preProject
+		APIGateway\nginx\id-local.conf = APIGateway\nginx\id-local.conf
+		APIGateway\nginx\id-local.crt = APIGateway\nginx\id-local.crt
+		APIGateway\nginx\id-local.key = APIGateway\nginx\id-local.key
+		APIGateway\nginx\id-local.pfx = APIGateway\nginx\id-local.pfx
 		APIGateway\nginx\nginx.Dockerfile = APIGateway\nginx\nginx.Dockerfile
 		APIGateway\nginx\nginx.local.conf = APIGateway\nginx\nginx.local.conf
 	EndProjectSection

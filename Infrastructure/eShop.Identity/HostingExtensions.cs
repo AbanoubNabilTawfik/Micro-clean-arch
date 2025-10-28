@@ -15,9 +15,11 @@ internal static class HostingExtensions
                 options.Events.RaiseInformationEvents = true;
                 options.Events.RaiseFailureEvents = true;
                 options.Events.RaiseSuccessEvents = true;
-                options.IssuerUri = "https://localhost:9009";
+                options.IssuerUri = "http://identityserver:9011";
                 // see https://docs.duendesoftware.com/identityserver/v6/fundamentals/resources/
                 options.EmitStaticAudienceClaim = true;
+                options.KeyManagement.Enabled = false;
+
             })
             .AddTestUsers(TestUsers.Users).AddDeveloperSigningCredential(persistKey:true,filename:"tempkey.jwk");
 

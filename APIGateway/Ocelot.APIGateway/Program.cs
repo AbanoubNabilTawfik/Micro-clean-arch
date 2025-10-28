@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using static System.Net.WebRequestMethods;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,13 +16,13 @@ var authSchema = "EShoppingGatewayAuthSchema";
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(authSchema,options =>
     {
-        options.Authority = "https://host.docker.internal:9009";
+        options.Authority = "http://identityserver:9011";
         options.RequireHttpsMetadata = true;
 
         options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
         {
             ValidateIssuer = true,
-            ValidIssuer = "https://localhost:9009",
+            ValidIssuer = "http://identityserver:9011",
             ValidateAudience = true,
             ValidAudience = "EShoppingGateway",
             ValidateLifetime = true,

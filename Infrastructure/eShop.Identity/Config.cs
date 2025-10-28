@@ -65,7 +65,7 @@ public static class Config
                 ClientId="EShppingGatewayClient",
                 ClientSecrets ={new Secret("49C1A7B8-1C79-4A70-A3C6-A37998FB86B0".Sha256()) } ,
                 AllowedGrantTypes=GrantTypes.ClientCredentials,
-                AllowedScopes ={ "eshoppinggateway", "basketapi" }
+                AllowedScopes ={ "eshoppinggateway", "basketapi" , "catalogapi.read" }
             }
         };
 }
