@@ -1,0 +1,136 @@
+<!-- MAIN -->
+<main class="container my-4">
+  <div class="row g-4">
+    <!-- SIDEBAR (static UI) -->
+    <aside class="col-lg-3">
+      <div class="card shadow-sm sticky-sidebar">
+        <div class="card-header bg-white fw-semibold">
+          <i class="fa fa-filter me-2"></i>Filters
+        </div>
+        <div class="card-body">
+          <!-- Categories -->
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="facet-label"
+                ><i class="fa fa-solid fa-tags me-2"></i>Brands</span
+              >
+            </div>
+            @for(brand of brands ; track $index) {
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="cat1"
+                [checked]="storeParams.brandId === brand.id"
+                [value]="brand.id"
+                (change)="onBrandSelected(brand.id)"
+              />
+
+              <label class="form-check-label" for="cat1">
+                {{ brand.name }}
+              </label>
+            </div>
+            }
+          </div>
+
+          <hr />
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="facet-label"
+                ><i class="fa fa-solid fa-tags me-2"></i>Types</span
+              >
+            </div>
+            @for(type of types; track $index) {
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="cat1"
+                [checked]="storeParams.typeId === type.id"
+                [value]="type.id"
+                (change)="onTypeSelected(type.id)"
+              />
+              <label class="form-check-label" for="cat1">{{ type.name }}</label>
+            </div>
+            }
+          </div>
+
+          <button (click)="onResetFilters()" class="btn btn-outline-secondary w-100" type="button">
+            <i class="fa-solid fa-arrow-rotate-left me-2"></i>Reset Filters
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- PRODUCTS (static cards) -->
+    <section class="col-lg-9">
+      <!-- Toolbar -->
+      <div
+        class="d-flex flex-wrap gap-2 justify-content-between align-items-center mb-2"
+      >
+        <div class="input-group search-pill">
+          <span class="input-group-text"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+          <input
+            class="form-control"
+            type="search"
+            (keyup)="onSearch()"
+            #search
+            placeholder="Search products :)"
+          />
+          <button class="btn" type="button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="text-muted">
+          Showing <strong>{{
+            storeParams.pageNumber*storeParams.pageSize > totalCount 
+            ?totalCount
+            :storeParams.pageNumber*storeParams.pageSize
+            }}</strong> of <strong>{{totalCount}}</strong> results
+        </div>
+        <div class="d-flex gap-2">
+          <select class="form-select" (change)="onSortSelected($event.target)">
+            @for (item of sortOptions; track $index) {
+            <option [value]="item.value">{{ item.name }}</option>
+            }
+          </select>
+          <select class="form-select" (change)="onItemPerPageChanged($event.target)">
+           @for(pageNumberCount of iterPerPageOptions ;track $index){
+            <option [selected]="pageNumberCount.name==='Default'" [value]="pageNumberCount.value">{{pageNumberCount.name}}</option>
+           }
+          </select>
+        </div>
+      </div>
+
+      <!-- Grid -->
+      <div class="row g-3">
+        <!-- Repeatable static card pattern -->
+
+        <!-- 7 more static examples -->
+        @for(product of products ; track $index) {
+        <div class="col-4 col-md-4 col-xl-4">
+          <app-product-item [product]="product"></app-product-item>
+        </div>
+        }
+      </div>
+
+      <!-- Pagination (static) -->
+      <div class="d-flex justify-content-between align-items-center mt-3">
+        <pagination
+          [totalItems]="totalCount"
+          [(ngModel)]="currentPage"
+          [itemsPerPage]="storeParams.pageSize"
+          (numPages)="smallnumPages = $event"
+          (pageChanged)="onPageChanged($event)"
+        ></pagination>
+
+        <pre class="card card-block card-header mb-3">
+      The selected page no: {{ currentPage }}/{{ smallnumPages }}</pre
+        >
+      </div>
+    </section>
+  </div>
+</main>

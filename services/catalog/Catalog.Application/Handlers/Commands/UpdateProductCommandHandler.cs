@@ -28,8 +28,8 @@ namespace Catalog.Application.Handlers.Commands
                 ImageFile = request.ImageFile,
                 Price = request.Price,
                 Summary = request.Summary,
-                Brand = request.Brands,
-                Type = request.Types,
+                Brands = request.Brands,
+                Types = request.Types,
             });
 
             return productEntity;

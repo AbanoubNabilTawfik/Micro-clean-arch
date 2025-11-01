@@ -40,13 +40,13 @@ namespace Catalog.Infrastructure.Repositories
 
             if (!string.IsNullOrEmpty(catalogSpecParams.BrandId))
             {
-                var brandFilter = builder.Eq(p => p.Brand.Id, catalogSpecParams.BrandId);
+                var brandFilter = builder.Eq(p => p.Brands.Id, catalogSpecParams.BrandId);
                 filter &= brandFilter;
             }
 
             if (!string.IsNullOrEmpty(catalogSpecParams.TypeId))
             {
-                var typeFilter = builder.Eq(p => p.Type.Id, catalogSpecParams.TypeId);
+                var typeFilter = builder.Eq(p => p.Types.Id, catalogSpecParams.TypeId);
                 filter &= typeFilter;
             }
 
@@ -66,7 +66,7 @@ namespace Catalog.Infrastructure.Repositories
         public async Task<IEnumerable<Product>> GetAllProductsByBrand(string name)
         {
             return await _context.Products
-                          .Find(p => p.Brand.Name == name).ToListAsync();
+                          .Find(p => p.Brands.Name == name).ToListAsync();
         }
 
         public async Task<IEnumerable<Product>> GetAllProductsByName(string name)

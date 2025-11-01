@@ -19,46 +19,46 @@ builder.Host.UseSerilog(Logging.ConfigureLogger);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers();
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.Authority = "http://identityserver:9011";
-        options.RequireHttpsMetadata = false;
+//builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+//    .AddJwtBearer(options =>
+//    {
+//        options.Authority = "http://identityserver:9011";
+//        options.RequireHttpsMetadata = false;
 
-        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidIssuer = "http://identityserver:9011",
-            ValidateAudience = true,
-            ValidAudience="Catalog",
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ClockSkew=TimeSpan.Zero
+//        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+//        {
+//            ValidateIssuer = true,
+//            ValidIssuer = "http://identityserver:9011",
+//            ValidateAudience = true,
+//            ValidAudience="Catalog",
+//            ValidateLifetime = true,
+//            ValidateIssuerSigningKey = true,
+//            ClockSkew=TimeSpan.Zero
 
-        };
-        //Add this to docker to host communtication
-        options.BackchannelHttpHandler = new HttpClientHandler
-        {
-            ServerCertificateCustomValidationCallback =(message,cert,chain,errors)=>true
-        };
+//        };
+//        //Add this to docker to host communtication
+//        options.BackchannelHttpHandler = new HttpClientHandler
+//        {
+//            ServerCertificateCustomValidationCallback =(message,cert,chain,errors)=>true
+//        };
 
-        options.Events = new JwtBearerEvents
-        {
-          OnAuthenticationFailed = context =>
-          {
-              Console.WriteLine($"======= AUTHENTICTION FAILED");
-              Console.WriteLine($"Exception :{context.Exception.Message}");
-              Console.WriteLine($"Authority:{options.Authority}");
-              return Task.CompletedTask;
-          }
-        };
+//        options.Events = new JwtBearerEvents
+//        {
+//          OnAuthenticationFailed = context =>
+//          {
+//              Console.WriteLine($"======= AUTHENTICTION FAILED");
+//              Console.WriteLine($"Exception :{context.Exception.Message}");
+//              Console.WriteLine($"Authority:{options.Authority}");
+//              return Task.CompletedTask;
+//          }
+//        };
 
-    });
+//    });
 
-builder.Services.AddAuthorization(options =>
-{
-    options.AddPolicy("CanRead", policy => policy.RequireClaim("scope", "catalogapi.read"));
-});
+//builder.Services.AddAuthorization(options =>
+//{
+//    options.AddPolicy("CanRead", policy => policy.RequireClaim("scope", "catalogapi.read"));
+//});
 
 builder.Services.AddAutoMapper(typeof(ProductMappingProfile).Assembly);
 
@@ -72,13 +72,21 @@ builder.Services.AddScoped<IProductRepository,ProductRepository>();
 builder.Services.AddScoped<IBrandRepository, ProductRepository>();
 builder.Services.AddScoped<ITypeRepository, ProductRepository>();
 
-    var userPolicy = new AuthorizationPolicyBuilder()
-        .RequireAuthenticatedUser().Build();
-
-    builder.Services.AddControllers(config =>
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy", policy =>
     {
-        config.Filters.Add(new AuthorizeFilter(userPolicy));
+        policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
     });
+});
+
+    //var userPolicy = new AuthorizationPolicyBuilder()
+    //    .RequireAuthenticatedUser().Build();
+
+    //builder.Services.AddControllers(config =>
+    //{
+    //    config.Filters.Add(new AuthorizeFilter(userPolicy));
+    //});
 
 builder.Services.AddApiVersioning(options =>
 {
@@ -161,7 +169,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseAuthentication();
+app.UseCors("CorsPolicy");
+//app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

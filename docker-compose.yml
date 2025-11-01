@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: APIGateway/nginx/nginx.Dockerfile
     depends_on:
-      - identityserver
+      - eShop.Identity
       - catalog.api
       - basket.api
       - discount.api
@@ -33,7 +33,7 @@ services:
       - DatabaseSettings__BrandsCollection=ProductBrands
       - DatabaseSettings__TypesCollection=ProductTypes
       - "ElasticConfiguration__Uri=http://elasticsearch:9200"
-      - Auth__Authority=http://identityserver:9011
+      - Auth__Authority=https://host.docker.internal:9009
       - Auth__RequireHttpsMetadata=false
       - Auth__Audience=Catalog
 
@@ -61,7 +61,7 @@ services:
      ports:
       - "5432:5432"
      volumes: 
-      - postgres_data:/var/lib/postgresql/data/
+      - postgres_data:/var/lib/postgresql
      healthcheck:
       test: ["CMD-SHELL", "pg_isready -U admin -d DiscountDb"]
       interval: 10s
@@ -201,7 +201,7 @@ services:
         - ASPNETCORE_ENVIRONMENT=Development
         - ASPNETCORE_URLS=http://+:8080
     depends_on:
-        - identityserver
+        - eShop.Identity
         - catalog.api
         - basket.api
         - discount.api 
@@ -210,9 +210,9 @@ services:
         - "8010:8080"
 
 
-  identityserver:
+  eShop.Identity:
     image: ${DOCKER_REGISTRY-}eshopidentity
-    container_name: identityserver
+    container_name: eShop.Identity
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:9011   
