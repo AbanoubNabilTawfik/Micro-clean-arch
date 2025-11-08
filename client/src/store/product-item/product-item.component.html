@@ -9,12 +9,12 @@
       {{product?.name}}
     </h6>
     <div class="mb-1 small text-muted">
-      <a href="#"><i class="fa fa-eye me-2"></i></a>
+      <a [routerLink]="['/store',product?.id]"><i class="fa fa-eye me-2"></i></a>
     </div>
     <div class="mb-2"><span class="fw-semibold">{{product?.price|currency}}</span></div>
 
     <div class="mt-auto d-grid">
-      <a class="btn btn-primary" href="#"
+      <a class="btn btn-primary" (click)="addItemToBasket()"
         ><i class="fa fa-cart-plus me-2"></i>Add to Cart</a
       >
     </div>

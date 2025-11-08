@@ -10,7 +10,7 @@ namespace Basket.Application.Responses
             get; set;
         }
 
-        public List<ShoppingCartItem> Items { get; set; } = new List<ShoppingCartItem>();
+        public List<ShoppingCartItem> Items { get; set; }
 
         public ShoppingCartResponse()
         {

@@ -1,0 +1,7 @@
+/* product-details.component.css */
+.object-cover { object-fit: cover; }
+.btn-primary {
+  background: linear-gradient(135deg, #4f46e5, #8b5cf6);
+  border: 0;
+}
+.btn-primary:hover { filter: brightness(0.95); }

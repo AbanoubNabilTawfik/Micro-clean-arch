@@ -1,0 +1,24 @@
+<div class="row justify-content-end mt-4" *ngIf="(basketService.basketTotal$ | async) as total">
+    <div class="col-md-4">
+      <div class="card shadow border-0">
+        <div class="card-body">
+          <h5 class="card-title mb-3">
+            <i class="fa fa-receipt me-2 text-primary"></i>Order Summary
+          </h5>
+          <p class="d-flex justify-content-between">
+            <span>Subtotal:</span> <span>${{ total.total }}</span>
+          </p>
+          <p class="d-flex justify-content-between border-bottom pb-2">
+            <span>Shipping:</span> <span>0</span>
+          </p>
+          <h5 class="d-flex justify-content-between">
+            <span>Total:</span>
+            <span class="text-success fw-bold">${{ total.total }}</span>
+          </h5>
+          <button class="btn btn-primary w-100 mt-3" routerLink="/checkout">
+            <i class="fa fa-credit-card me-2"></i>Proceed to Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,18 @@
+<ng-container>
+    <!-- Header Section -->
+<section class="bg-light border-bottom py-3 mb-4" *ngIf="$any(bcService.breadcrumbs$|async) as breadcrumbs">
+  <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between">
+    <!-- Left Side: Page Title -->
+    <div class="d-flex align-items-center mb-2 mb-sm-0">
+      <i class="fa fa-triangle-exclamation fa-lg text-danger me-2"></i>
+      <h2 class="h5 fw-semibold mb-0 text-dark">{{breadcrumbs.length>0 && breadcrumbs[breadcrumbs.length-1].label |titlecase}}</h2>
+    </div>
+
+    <!-- Right Side: Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      
+      <xng-breadcrumb></xng-breadcrumb>
+    </nav>
+  </div>
+</section>
+</ng-container>

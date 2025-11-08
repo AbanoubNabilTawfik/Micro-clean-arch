@@ -11,39 +11,35 @@
 
   <div class="collapse navbar-collapse" [collapse]="isCollapsed">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+      <li class="nav-item"><a class="nav-link" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/">Home</a></li>
+      <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/store">Products</a></li>
       <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
     </ul>
 
     <ul class="navbar-nav ms-auto">
-      <li class="nav-item me-3">
-        <a class="nav-link" href="#"> 
+      <li class="nav-item me-3" *ngIf="!isUserAuthenticated">
+        <a class="nav-link" (click)="login()"> 
             <i class="fa fa-sign-in"></i> Login </a>
        
       </li>
       <li lass="nav-item me-3">
-         <a class="nav-link" href="#">
+         <a class="nav-link" *ngIf="isUserAuthenticated" (click)="logout()">
           <i class="fa fa-user-plus"></i> Sign Up
         </a>
       </li>
 
       <!-- Cart dropdown -->
-      <li class="nav-item dropdown" dropdown placement="bottom-end">
+      <li class="nav-item dropdown" 
+          dropdown 
+          placement="bottom-end" 
+          routerLink="/basket"
+          
+          >
         <a class="nav-link" dropdownToggle role="button">
           <i class="fa fa-shopping-cart"></i>
-          <span class="badge bg-danger">3</span>
+          <span *ngIf="basketService.basketSource$ |async  as basket" class="badge bg-danger">{{getBasketCount(basket.items)}}</span>
         </a>
-        <ul *dropdownMenu class="dropdown-menu dropdown-menu-end">
-          <li class="dropdown-item text-center">
-            <strong>Total: $150</strong>
-          </li>
-          <li>
-            <a class="dropdown-item text-center" href="#">
-              <i class="fa fa-shopping-bag me-1"></i> View Cart
-            </a>
-          </li>
-        </ul>
+        
       </li>
     </ul>
   </div>

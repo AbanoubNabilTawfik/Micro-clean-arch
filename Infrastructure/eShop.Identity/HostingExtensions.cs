@@ -15,21 +15,22 @@ internal static class HostingExtensions
                 options.Events.RaiseInformationEvents = true;
                 options.Events.RaiseFailureEvents = true;
                 options.Events.RaiseSuccessEvents = true;
-                options.IssuerUri = "http://identityserver:9011";
+                options.IssuerUri = "http://localhost:9011";
                 // see https://docs.duendesoftware.com/identityserver/v6/fundamentals/resources/
                 options.EmitStaticAudienceClaim = true;
                 options.KeyManagement.Enabled = false;
+                options.Authentication.CookieSameSiteMode = SameSiteMode.Lax;
 
             })
             .AddTestUsers(TestUsers.Users).AddDeveloperSigningCredential(persistKey:true,filename:"tempkey.jwk");
-
         // in-memory, code config
         isBuilder.AddInMemoryIdentityResources(Config.IdentityResources);
         isBuilder.AddInMemoryApiScopes(Config.ApiScopes);
         isBuilder.AddInMemoryApiResources(Config.ApiResources);
         isBuilder.AddInMemoryClients(Config.Clients);
 
-
+        builder.Services.AddControllersWithViews();
+        builder.Services.AddRazorPages();
         // if you want to use server-side sessions: https://blog.duendesoftware.com/posts/20220406_session_management/
         // then enable it
         //isBuilder.AddServerSideSessions();
@@ -43,17 +44,17 @@ internal static class HostingExtensions
         //    options.Conventions.AuthorizeFolder("/ServerSideSessions", "admin"));
 
 
-        builder.Services.AddAuthentication()
-            .AddGoogle(options =>
-            {
-                options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+        //builder.Services.AddAuthentication()
+        //    .AddGoogle(options =>
+        //    {
+        //        options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
 
-                // register your IdentityServer with Google at https://console.developers.google.com
-                // enable the Google+ API
-                // set the redirect URI to https://localhost:5001/signin-google
-                options.ClientId = "copy client ID from Google here";
-                options.ClientSecret = "copy client secret from Google here";
-            });
+        //        // register your IdentityServer with Google at https://console.developers.google.com
+        //        // enable the Google+ API
+        //        // set the redirect URI to https://localhost:5001/signin-google
+        //        options.ClientId = "copy client ID from Google here";
+        //        options.ClientSecret = "copy client secret from Google here";
+        //    });
 
         return builder.Build();
     }
@@ -70,10 +71,11 @@ internal static class HostingExtensions
         app.UseStaticFiles();
         app.UseRouting();
         app.UseIdentityServer();
+        app.UseAuthentication();
         app.UseAuthorization();
-        
-        app.MapRazorPages()
-            .RequireAuthorization();
+
+        app.MapDefaultControllerRoute();
+        app.MapRazorPages();
 
         return app;
     }

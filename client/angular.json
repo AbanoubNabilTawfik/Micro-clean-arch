@@ -33,6 +33,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/assets",
               "src/images",
               {
                 "glob": "**/*",
@@ -42,6 +43,7 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/ngx-spinner/animations/cube-transition.css" ,
               "src/styles.scss"
             ],
             "scripts": []

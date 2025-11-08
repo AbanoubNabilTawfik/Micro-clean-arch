@@ -24,41 +24,41 @@ builder.Host.UseSerilog(Logging.ConfigureLogger);
 
 builder.Services.AddControllers();
 
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.Authority = "http://identityserver:9011";
-        options.RequireHttpsMetadata = false;
+//builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+//    .AddJwtBearer(options =>
+//    {
+//        options.Authority = "http://identityserver:9011";
+//        options.RequireHttpsMetadata = false;
 
-        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidIssuer = "http://identityserver:9011",
-            ValidateAudience = true,
-            ValidAudience = "Basket",
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ClockSkew = TimeSpan.Zero
+//        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+//        {
+//            ValidateIssuer = true,
+//            ValidIssuer = "http://identityserver:9011",
+//            ValidateAudience = true,
+//            ValidAudience = "Basket",
+//            ValidateLifetime = true,
+//            ValidateIssuerSigningKey = true,
+//            ClockSkew = TimeSpan.Zero
 
-        };
-        //Add this to docker to host communtication
-        options.BackchannelHttpHandler = new HttpClientHandler
-        {
-            ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
-        };
+//        };
+//        //Add this to docker to host communtication
+//        options.BackchannelHttpHandler = new HttpClientHandler
+//        {
+//            ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
+//        };
 
-        options.Events = new JwtBearerEvents
-        {
-            OnAuthenticationFailed = context =>
-            {
-                Console.WriteLine($"======= AUTHENTICTION FAILED");
-                Console.WriteLine($"Exception :{context.Exception.Message}");
-                Console.WriteLine($"Authority:{options.Authority}");
-                return Task.CompletedTask;
-            }
-        };
+//        options.Events = new JwtBearerEvents
+//        {
+//            OnAuthenticationFailed = context =>
+//            {
+//                Console.WriteLine($"======= AUTHENTICTION FAILED");
+//                Console.WriteLine($"Exception :{context.Exception.Message}");
+//                Console.WriteLine($"Authority:{options.Authority}");
+//                return Task.CompletedTask;
+//            }
+//        };
 
-    });
+//    });
 
 builder.Services.AddOpenApi();
 
@@ -73,13 +73,21 @@ builder.Services.AddScoped<DiscountGrpcService>();
 builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(
     cfg => cfg.Address = new Uri(builder.Configuration["GrpcSettings:DiscountUrl"]));
 
-var userPolicy = new AuthorizationPolicyBuilder()
-        .RequireAuthenticatedUser().Build();
-
-builder.Services.AddControllers(config =>
+builder.Services.AddCors(options =>
 {
-    config.Filters.Add(new AuthorizeFilter(userPolicy));
+    options.AddPolicy("CorsPolicy", policy =>
+    {
+        policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+    });
 });
+
+//var userPolicy = new AuthorizationPolicyBuilder()
+//        .RequireAuthenticatedUser().Build();
+
+//builder.Services.AddControllers(config =>
+//{
+//    config.Filters.Add(new AuthorizeFilter(userPolicy));
+//});
 
 builder.Services.AddMassTransit(config =>
 {
@@ -211,7 +219,8 @@ if (app.Environment.IsDevelopment())
 
     });
 }
-app.UseAuthentication();
+//app.UseAuthentication();
+app.UseCors("CorsPolicy");
 app.UseAuthorization();
 
 app.MapControllers();

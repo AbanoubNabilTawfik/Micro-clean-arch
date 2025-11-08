@@ -1,3 +1,11 @@
 <app-navbar></app-navbar>
-
-<app-store></app-store>
+<app-header></app-header>
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 0.8)"
+  size="medium"
+  color="#fff"
+  type="cube-transition"
+  [fullScreen]="true"
+  ><p style="color: white">Loading...</p></ngx-spinner
+>
+<router-outlet></router-outlet>

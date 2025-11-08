@@ -1,0 +1,48 @@
+<!-- server-error.component.html -->
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+
+      <!-- Header card -->
+      <div class="card shadow-sm mb-3 border-0">
+        <div class="card-body p-4 text-center">
+          <div class="display-4 mb-2 text-danger">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+
+          <h1 class="h3 fw-bold mb-1">Something went wrong</h1>
+          <p class="text-muted mb-3">
+            We hit an unexpected error while processing your request.
+            Please try again in a moment.
+          </p>
+
+          <!-- Quick info -->
+          <div class="d-flex flex-wrap gap-2 justify-content-center mb-3">
+            <span class="badge text-bg-danger-subtle">
+              <i class="fa fa-server me-1"></i> HTTP 500
+            </span>
+          </div>
+
+          <!-- Actions -->
+          <div class="d-grid d-sm-inline-flex gap-2">
+            <button class="btn btn-primary px-4" type="button">
+              <i class="fa fa-rotate-right me-2"></i>Retry
+            </button>
+            <button class="btn btn-outline-secondary px-4" routerLink="/store" type="button">
+              <i class="fa fa-house me-2"></i>Go Home
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alert (ngx-bootstrap style works with Bootstrap classes) -->
+      <div class="alert alert-warning d-flex align-items-start gap-2" role="alert">
+        <i class="fa fa-circle-info mt-1"></i>
+        <div>
+          If the issue persists, contact support and share the request ID above (if available).
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

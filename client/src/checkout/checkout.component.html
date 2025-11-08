@@ -1,0 +1,64 @@
+<section class="container my-5">
+  <h3 class="mb-4 text-center text-uppercase">
+    <i class="fa fa-shopping-cart me-2 text-primary"></i>Your Basket
+  </h3>
+  <div *ngIf="(basketService.basketSource$ | async) === null" >
+      <p> There are no items in your basket! Please add!</p>
+  </div>
+<ng-container *ngIf="(basketService.basketSource$ | async) as basket">
+  <div class="table-responsive shadow-sm rounded">
+    <table class="table align-middle text-center mb-0">
+      <thead class="table-dark text-uppercase">
+        <tr>
+          <th scope="col">Image</th>
+          <th scope="col">Product</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Total</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of basket.items">
+          <td>
+            <img [src]="item.imageFile" alt="Product" class="img-thumbnail" width="70" />
+          </td>
+          <td class="text-start">
+            <strong>{{ item.productName }}</strong><br />
+            <small class="text-muted">Product ID: {{ item.productId }}</small>
+          </td>
+          <td>${{ item.price.toFixed(2) }}</td>
+          <td>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-outline-secondary btn-sm" (click)="decrementItem(item)">
+                <i class="fa fa-minus"></i>
+              </button>
+              <span class="px-3 fw-bold">{{ item.quantity }}</span>
+              <button type="button" class="btn btn-outline-secondary btn-sm" (click)="incrementItem(item)">
+                <i class="fa fa-plus"></i>
+              </button>
+            </div>
+          </td>
+          <td class="fw-bold">${{ (item.price * item.quantity).toFixed(2) }}</td>
+          <td>
+            <button class="btn btn-danger btn-sm" (click)="removeBasketItem(item)">
+              <i class="fa fa-trash"></i> Remove
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+        <div class="col-6 offset-6">
+          
+          <a (click)="orderNow(basket)" class="btn btn-outline-primary py-2 btn-block">
+            Order Now
+          </a>
+        </div>
+</div>
+</ng-container>
+
+
+ 
+</section>

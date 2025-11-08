@@ -33,7 +33,7 @@ services:
       - DatabaseSettings__BrandsCollection=ProductBrands
       - DatabaseSettings__TypesCollection=ProductTypes
       - "ElasticConfiguration__Uri=http://elasticsearch:9200"
-      - Auth__Authority=https://host.docker.internal:9009
+      - Auth__Authority=http://localhost:9011
       - Auth__RequireHttpsMetadata=false
       - Auth__Audience=Catalog
 
@@ -124,7 +124,7 @@ services:
       - "GrpcSettings__DiscountUrl=http://discount.api:8080"
       - "EventBusSettings__HostAddress=amqp://guest:guest@rabbitmq:5672"
       - "ElasticConfiguration__Uri=http://elasticsearch:9200"
-      - Auth__Authority=http://identityserver:9011
+      - Auth__Authority=http://localhost:9011
       - Auth__RequireHttpsMetadata=false
 
      

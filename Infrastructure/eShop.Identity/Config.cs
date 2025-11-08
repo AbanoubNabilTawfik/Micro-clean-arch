@@ -1,4 +1,5 @@
-﻿using Duende.IdentityServer.Models;
+﻿using Duende.IdentityServer;
+using Duende.IdentityServer.Models;
 
 namespace eShop.Identity;
 
@@ -66,6 +67,32 @@ public static class Config
                 ClientSecrets ={new Secret("49C1A7B8-1C79-4A70-A3C6-A37998FB86B0".Sha256()) } ,
                 AllowedGrantTypes=GrantTypes.ClientCredentials,
                 AllowedScopes ={ "eshoppinggateway", "basketapi" , "catalogapi.read" }
-            }
+            },
+            new Client
+                {
+                    ClientId = "angular-client",
+                    ClientName = "Angular SPA",
+                    AllowedGrantTypes = GrantTypes.Code,
+                    RequirePkce = true,
+                    RequireClientSecret = false,            // SPA
+                    RedirectUris = {
+                        "http://localhost:4200/signin-callback",
+                        "http://localhost:4200/assets/silent-callback.html"
+                    },
+                    PostLogoutRedirectUris = {
+                        "http://localhost:4200/signout-callback"
+                    },
+                    AllowedCorsOrigins = {
+                        "http://localhost:4200"
+                    },
+                    AllowedScopes = {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "eshoppinggateway"
+                    },
+                    AllowAccessTokensViaBrowser = true,
+                    AccessTokenLifetime = 3600,
+                    Enabled = true
+                }
         };
 }

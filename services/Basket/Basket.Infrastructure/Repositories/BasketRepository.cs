@@ -32,17 +32,11 @@ namespace Basket.Infrastructure.Repositories
 
         public async Task<ShoppingCart> UpdateBasket(ShoppingCart cart)
         {
-            var basket = await _redisCache.GetStringAsync(cart.UserName);
-            if (basket != null)
-            {
-                //logic return 
-                return await GetBasket(cart.UserName);
-            }
-            else
-            {
-                await _redisCache.SetStringAsync(cart.UserName,JsonConvert.SerializeObject(cart));
-                return await GetBasket(cart.UserName);
-            }
+            await _redisCache.SetStringAsync(
+                                    cart.UserName,
+                                    JsonConvert.SerializeObject(cart));
+
+            return cart; 
         }
 
         public  async Task DeleteBasket(string userName)
